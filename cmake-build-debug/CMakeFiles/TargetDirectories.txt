@@ -1,0 +1,3 @@
+C:/Users/daiji/CLionProjects/lab_ShoppingList/cmake-build-debug/CMakeFiles/lab_ShoppingList.dir
+C:/Users/daiji/CLionProjects/lab_ShoppingList/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/daiji/CLionProjects/lab_ShoppingList/cmake-build-debug/CMakeFiles/rebuild_cache.dir
