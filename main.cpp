@@ -1,6 +1,8 @@
-#include <iostream>
+#include "ShoppingListManager.h"
+#include "UserView.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    ShoppingListManager manager;
+    UserView user(&manager);
+
 }
