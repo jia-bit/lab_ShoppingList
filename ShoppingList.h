@@ -31,8 +31,9 @@ public:
     std::string getlistname() const;
     void renamelistname(const std::string& name);
     void calcoltotal();
+    void settotal(float n);
     void modifysingleobjectquantity(const float& goalq, int pos);
-
+    const ShoppingList* getlist()const;
 private:
     std::list<Observer*> observers;
     std::vector<Object> list;

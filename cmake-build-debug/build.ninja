@@ -55,6 +55,42 @@ build CMakeFiles/lab_ShoppingList.dir/main.cpp.obj: CXX_COMPILER__lab_ShoppingLi
   OBJECT_DIR = CMakeFiles\lab_ShoppingList.dir
   OBJECT_FILE_DIR = CMakeFiles\lab_ShoppingList.dir
 
+build CMakeFiles/lab_ShoppingList.dir/Object.cpp.obj: CXX_COMPILER__lab_ShoppingList_Debug C$:/Users/daiji/CLionProjects/lab_ShoppingList/Object.cpp || cmake_object_order_depends_target_lab_ShoppingList
+  DEP_FILE = CMakeFiles\lab_ShoppingList.dir\Object.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab_ShoppingList.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab_ShoppingList.dir
+
+build CMakeFiles/lab_ShoppingList.dir/ShoppingList.cpp.obj: CXX_COMPILER__lab_ShoppingList_Debug C$:/Users/daiji/CLionProjects/lab_ShoppingList/ShoppingList.cpp || cmake_object_order_depends_target_lab_ShoppingList
+  DEP_FILE = CMakeFiles\lab_ShoppingList.dir\ShoppingList.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab_ShoppingList.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab_ShoppingList.dir
+
+build CMakeFiles/lab_ShoppingList.dir/ShoppingListManager.cpp.obj: CXX_COMPILER__lab_ShoppingList_Debug C$:/Users/daiji/CLionProjects/lab_ShoppingList/ShoppingListManager.cpp || cmake_object_order_depends_target_lab_ShoppingList
+  DEP_FILE = CMakeFiles\lab_ShoppingList.dir\ShoppingListManager.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab_ShoppingList.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab_ShoppingList.dir
+
+build CMakeFiles/lab_ShoppingList.dir/ListNumberObserver.cpp.obj: CXX_COMPILER__lab_ShoppingList_Debug C$:/Users/daiji/CLionProjects/lab_ShoppingList/ListNumberObserver.cpp || cmake_object_order_depends_target_lab_ShoppingList
+  DEP_FILE = CMakeFiles\lab_ShoppingList.dir\ListNumberObserver.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab_ShoppingList.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab_ShoppingList.dir
+
+build CMakeFiles/lab_ShoppingList.dir/UserView.cpp.obj: CXX_COMPILER__lab_ShoppingList_Debug C$:/Users/daiji/CLionProjects/lab_ShoppingList/UserView.cpp || cmake_object_order_depends_target_lab_ShoppingList
+  DEP_FILE = CMakeFiles\lab_ShoppingList.dir\UserView.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab_ShoppingList.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab_ShoppingList.dir
+
+build CMakeFiles/lab_ShoppingList.dir/ShoppingListObserver.cpp.obj: CXX_COMPILER__lab_ShoppingList_Debug C$:/Users/daiji/CLionProjects/lab_ShoppingList/ShoppingListObserver.cpp || cmake_object_order_depends_target_lab_ShoppingList
+  DEP_FILE = CMakeFiles\lab_ShoppingList.dir\ShoppingListObserver.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab_ShoppingList.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab_ShoppingList.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target lab_ShoppingList
@@ -63,7 +99,7 @@ build CMakeFiles/lab_ShoppingList.dir/main.cpp.obj: CXX_COMPILER__lab_ShoppingLi
 #############################################
 # Link the executable lab_ShoppingList.exe
 
-build lab_ShoppingList.exe: CXX_EXECUTABLE_LINKER__lab_ShoppingList_Debug CMakeFiles/lab_ShoppingList.dir/main.cpp.obj
+build lab_ShoppingList.exe: CXX_EXECUTABLE_LINKER__lab_ShoppingList_Debug CMakeFiles/lab_ShoppingList.dir/main.cpp.obj CMakeFiles/lab_ShoppingList.dir/Object.cpp.obj CMakeFiles/lab_ShoppingList.dir/ShoppingList.cpp.obj CMakeFiles/lab_ShoppingList.dir/ShoppingListManager.cpp.obj CMakeFiles/lab_ShoppingList.dir/ListNumberObserver.cpp.obj CMakeFiles/lab_ShoppingList.dir/UserView.cpp.obj CMakeFiles/lab_ShoppingList.dir/ShoppingListObserver.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab_ShoppingList.dir

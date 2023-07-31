@@ -33,10 +33,12 @@ void ShoppingList::calcoltotal() {
     for(auto itr:list){
         result=itr.getunitprice()*itr.getquantity()+result;
     }
-    this->total=result;
+    settotal(result);
 }
 
-
+void ShoppingList::settotal(float n) {
+    this->total=n;
+}
 
 void ShoppingList::modifysingleobjectquantity(const float& goalq, int pos) {
     if(pos>=0) {
@@ -136,4 +138,8 @@ ShoppingList::~ShoppingList() {
 
 void ShoppingList::renamelistname(const std::string &name) {
     this->listname=name;
+}
+
+const ShoppingList *ShoppingList::getlist() const {
+    return this;
 }

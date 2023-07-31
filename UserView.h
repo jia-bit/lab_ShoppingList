@@ -10,16 +10,17 @@
 
 class UserView {
 public:
-    UserView(ShoppingListManager* ls);
+    explicit UserView(ShoppingListManager* ls);
 
     void Menu();
     void printallLists();
     void Displayinlist();
 
-    void showonelist(const std::string& name);
-    void insertnewlist(const ShoppingList& newlist);
+    void showonelist(const ShoppingList* const list);
     void renamelistname(const std::string& newname, const std::string& origlname);
+    void insertnewlist(ShoppingList* newlist);
     void removeobject( const std::string& name, int pos);
+
 
 private:
     ShoppingListManager* lists;
