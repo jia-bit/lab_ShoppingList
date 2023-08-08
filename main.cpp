@@ -138,12 +138,27 @@ int main() {
                 user.printallLists();
                 break;
             case 5: //rinomina nome
+                user.printallLists();
+            loop2:
                 std::cout << "inserisci nome vecchio: " << std::endl;
                 std::cin >> oldname;
                 std::cout << "inserisci nome nuovo: " << std::endl;
                 std::cin>>newname;
-                user.renamelistname(newname, oldname);
+                if(!manager.renamelist(newname, oldname)){
+                    goto loop2;
+                }
+                ob1.printalllists();
+                break;
+            case 6:
                 user.printallLists();
+                std::cout<<"inserisci il nome della lista da copiare: "<<std::endl;
+                std::cin>>listname;
+                while(!manager.findlist(listname)){
+                    std::cout<<"riinserisci il nome della lista da copiare: "<<std::endl;
+                    std::cin>>listname;
+                }
+                manager.copylist(listname);
+                ob1.printalllists();
                 break;
 
             default:

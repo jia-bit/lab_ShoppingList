@@ -25,13 +25,14 @@ public:
     int getlistnumber()const;
     void setlistnumber(int n);
     void showonelist(const ShoppingList * const list);
-    void renamelist(const std::string& newname, const std::string& origilname);
+    bool renamelist(const std::string& newname, const std::string& oldname);
     void insertnewObject(const std::string& name, const Object& obj);
     void removeobject(const std::string& name, int pos);
     void modifysingleobjectquantity(const std::string& name, const float& goalq, int pos);
     void calcolatetotal(const std::string& name);
     const ShoppingList* getlist(const std::string& name);
     bool findlist(const std::string& name);
+    void copylist(const std::string& name);
 private:
     std::list<Observer*> observers;
     std::vector< ShoppingList*> lists;
