@@ -169,18 +169,15 @@ bool ShoppingListManager::findlist(const std::string &name) {
 }
 
 void ShoppingListManager::copylist(const std::string &name) {
-    ShoppingList* copylist=new ShoppingList(); //risolve total!=right.total
+    std::string Newname=name+"copyied";
     for(auto &itr:lists){
         if(itr->getlistname()==name){
-            //ShoppingList copylist (*itr->getlist());
-            *copylist=*itr->getlist();
-            std::string Newname=name +"copied";
-            copylist->renamelistname(Newname);
-            insertShoppinglist(copylist);
+            ShoppingList copylist(*itr->getlist());
+            copylist.renamelistname(Newname);
+            insertShoppinglist(new ShoppingList(copylist));
             notify();
             std::cout<<"lista copiata!"<<std::endl;
             break;
         }
     }
-    delete copylist;
 }
