@@ -131,9 +131,10 @@ int main() {
                     }
                 }
                 break;
-            case 4://cancella lista
+            case 4:
+                manager.printlists();
                 std::cout << "inserisci la posizione della lista da cancellare: " << std::endl;
-                std::cin >> listname;
+                std::cin >> pos;
                 manager.deleteShoppinglist(pos);
                 user.printallLists();
                 break;

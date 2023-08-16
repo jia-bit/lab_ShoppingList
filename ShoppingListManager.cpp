@@ -57,14 +57,10 @@ void ShoppingListManager::deleteShoppinglist(int pos) {
 }
 
 void ShoppingListManager::printlists() {
-    int i=1;
     if(getlistnumber()!=0) {
         std::cout<<"My all lists: "<<std::endl;
-        for (const auto &itr: lists) {
-            do {
-                std::cout << i << " . " << "List Name: " << itr->getlistname() <<"    -totale: "<<itr->gettotal()<<std::endl;
-                i++;
-            } while (i < 1);
+        for (int i=0; i<lists.size();i++) {
+            std::cout<<i<<". List Name: "<<lists[i]->getlistname()<<"   -total: "<<lists[i]->gettotal()<<std::endl;
         }
     }else{
         std::cout<<"non c' e' nessuna lista"<<std::endl;
