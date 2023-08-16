@@ -51,7 +51,7 @@ int main() {
                             std::cout<<"totale di "<<newlist->getlistname()<<" : "<<newlist->gettotal()<<std::endl;
                             goto loop;
                         case 2:
-                            std::cout<<"inserisci posizione di oggetto da cancellare: "<<std::endl;
+                            std::cout<<"inserisci la posizione di oggetto da cancellare: "<<std::endl;
                             std::cin>>pos;
                             manager.removeobject(newlistName, pos);
                             newlist->calcoltotal();
@@ -61,7 +61,7 @@ int main() {
                         case 3:
                             std::cout<<"inserisci nuova quantita': "<<std::endl;
                             std::cin>>goalquantity;
-                            std::cout<<"inserisci posizione di oggetto: "<<std::endl;
+                            std::cout<<"inserisci la posizione di oggetto: "<<std::endl;
                             std::cin>>pos;
                             newlist->modifysingleobjectquantity(goalquantity, pos);
                             newlist->calcoltotal();
@@ -107,7 +107,7 @@ int main() {
                             user.showonelist(manager.getlist(listname));
                             goto loop1;
                         case 2: //cancella oggetti
-                            std::cout<<"inserisci posizione di oggetto da cancellare: "<<std::endl;
+                            std::cout<<"inserisci la posizione di oggetto da cancellare: "<<std::endl;
                             std::cin>>pos;
                             user.removeobject(listname,pos);
                             manager.calcolatetotal(listname);
@@ -116,7 +116,7 @@ int main() {
                         case 3: //modifica quantita'
                             std::cout<<"inserisci nuova quantita': "<<std::endl;
                             std::cin>>goalquantity;
-                            std::cout<<"inserisci posizione di oggetto: "<<std::endl;
+                            std::cout<<"inserisci la posizione di oggetto: "<<std::endl;
                             std::cin>>pos;
                             manager.modifysingleobjectquantity(listname,goalquantity, pos);
                             manager.calcolatetotal(listname);
@@ -132,7 +132,7 @@ int main() {
                 }
                 break;
             case 4://cancella lista
-                std::cout << "inserisci il nome della lista da cancellare: " << std::endl;
+                std::cout << "inserisci la posizione della lista da cancellare: " << std::endl;
                 std::cin >> listname;
                 manager.deleteShoppinglist(pos);
                 user.printallLists();

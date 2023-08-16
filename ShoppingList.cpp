@@ -43,6 +43,7 @@ void ShoppingList::settotal(float n) {
 void ShoppingList::modifysingleobjectquantity(const float& goalq, int pos) {
     if(pos>=0) {
         list.at(pos).setquantity(goalq);
+        list.at(pos).setprice();
         calcoltotal();
         notify();
     }
